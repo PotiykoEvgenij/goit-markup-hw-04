@@ -94,6 +94,9 @@ img {
     padding-bottom: 24px;
 }
 .top-line-bg {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .nav {
@@ -150,6 +153,16 @@ img {
 
 .background-header {
     background-color: var(--caption-color);
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/head.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .header {
     text-align: center;
@@ -178,6 +191,7 @@ img {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: var(--primary-brand);
 }
 .button:hover,
 .button:focus {
@@ -186,6 +200,20 @@ img {
 
 /* Section 1 */
 
+.bg-icon-direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: var(--light-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.icon-direction {
+    width: 64px;
+    height: 64px;
+}
 .direction-list {
     display: flex;
     justify-content: space-between;
@@ -237,7 +265,10 @@ img {
 
 .cards-team  {
     background-color: var(--light-color);
+    max-width: 1440px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card-list  {
     display: flex;
@@ -264,13 +295,74 @@ img {
     margin: 0;
     padding: 0;
 }
+.card-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+}
+.card-link {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+}
+.card-link:nth-child(4n) {
+    margin-right: 0;
+}
+.card-link a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.icon-card {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+/* Section Customers */
+
+.customers {
+    display: flex;
+    justify-content:space-between;
+    height: 88px;
+}
+.icon-customers {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 16px 32px;
+    width: 104px;
+    height: 56px;
+}
+.link-customers a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
 
 /* Footer */
 
 footer {
     background-color: var(--caption-color);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer {
+    display: flex;
+    justify-content: start;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -292,6 +384,40 @@ footer {
     margin-bottom: 0;
     width: 264px;
 }
+.box-social {
+    margin-left: 120px;
+    height: 80px;
+}
+.title-social  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.social-links {
+    display: flex;
+}
+.social-link {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-right: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.social-link:nth-child(4) {
+    margin-right: 0;
+}
+.icon-social {
+    width: 24px;
+    height: 24px;
+}
+
 /* Portfolio */
 
 .filter {
@@ -342,7 +468,6 @@ footer {
     flex-wrap: wrap;
 }
 .project-card {
-    flex-basis: calccalc((100% - 48px)/3);
     margin-left: 24px;
     margin-top: 48px;
     width: 360px;
@@ -363,10 +488,6 @@ footer {
 }
 .card-content {
     padding: 32px 16px;
-    /* background: #FFFFFF;
-    border: 0.5px solid var(--light-color);
-    border-top: none;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 .card-hidden-text {
     display: none;
