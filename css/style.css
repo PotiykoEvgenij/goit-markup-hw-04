@@ -312,6 +312,10 @@ img {
     background-color: var(--primary-brand);
     border-radius: 50%;
 }
+.card-link:hover,
+.card-link:focus {
+    background: #31D0AA;
+}
 .card-link:nth-child(4n) {
     margin-right: 0;
 }
