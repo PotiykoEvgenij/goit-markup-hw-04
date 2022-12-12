@@ -303,7 +303,6 @@ img {
     height: 100%;
 }
 .card-link {
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,14 +316,13 @@ img {
     margin-right: 0;
 }
 .card-link a {
-    display: inline-block;
     width: 16px;
     height: 16px;
 }
 .icon-card {
-    display: inline-block;
     width: 16px;
     height: 16px;
+    fill: var(--light-color);
 }
 
 /* Section Customers */
@@ -335,11 +333,11 @@ img {
     height: 88px;
 }
 .icon-customers {
-    display: inline-block;
     box-sizing: content-box;
     padding: 16px 32px;
     width: 104px;
     height: 56px;
+    fill: #8E8F99;
 }
 .link-customers a {
     display: inline-block;
@@ -351,6 +349,15 @@ img {
     width: 168px;
     height: 88px;
 }
+.link-customers a:hover,
+.link-customers a:focus {
+    border: 1px solid var(--primary-brand);
+}
+.icon-customers:hover,
+.icon-customers:focus {
+    fill: var(--primary-brand);
+}
+
 
 /* Footer */
 
@@ -401,8 +408,6 @@ footer {
     display: flex;
 }
 .social-link {
-    display: inline-block;
-    box-sizing: border-box;
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -413,9 +418,14 @@ footer {
 .social-link:nth-child(4) {
     margin-right: 0;
 }
+.social-link:hover,
+.social-link:focus {
+    background: #31D0AA;
+}
 .icon-social {
     width: 24px;
     height: 24px;
+    fill: var(--light-color);
 }
 
 /* Portfolio */
